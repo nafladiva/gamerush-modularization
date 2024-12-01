@@ -5,20 +5,16 @@ workflows:
       xcode: latest
       cocoapods: default
       vars:
-          XCODE_PROJECT: "GameRush/GameRush.xcodeproj"
+          XCODE_WORKSPACE: "GameRush/Modularization.xcworkspace"
           XCODE_SCHEME: "GameRush"
     scripts:
-      - name: Run tests
+      - name: Install CocoaPods dependencies
         script: |
-          xcodebuild \
-          -project "$XCODE_PROJECT" \
-          -scheme "$XCODE_SCHEME" \
-          -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=16.1' \
-          clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
-      - name: Build debug app
+          cd GameRush \
+          pod install
+      - name: Build Debug App
         script: |
-          xcodebuild build -project "$XCODE_PROJECT" \
+          xcodebuild build -workspace "$XCODE_WORKSPACE" \
           -scheme "$XCODE_SCHEME" \
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
     artifacts:
