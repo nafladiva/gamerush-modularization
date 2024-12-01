@@ -504,7 +504,7 @@
 			);
 			currentVersion = 303AD3F02CFC480500867DC8 /* GRCoreData.xcdatamodel */;
 			name = GRCoreData.xcdatamodeld;
-			path = "/Users/nafladiva/Documents/Swift/gamerush-modularization/Common/Common/Database/GRCoreData.xcdatamodeld";
+			path = "GRCoreData.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
