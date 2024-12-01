@@ -5,7 +5,7 @@ workflows:
       xcode: latest
       cocoapods: default
       vars:
-          XCODE_PROJECT: "GameRush.xcodeproj"
+          XCODE_PROJECT: "GameRush/GameRush.xcodeproj"
           XCODE_SCHEME: "GameRush"
     scripts:
       - name: Run tests
