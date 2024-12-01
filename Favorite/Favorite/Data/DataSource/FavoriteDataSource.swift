@@ -9,7 +9,6 @@ import Foundation
 import Combine
 import Common
 import CoreData
-import LocalDatabase
 
 class FavoriteDataSource: FavoriteDataSourceProtocol {
     

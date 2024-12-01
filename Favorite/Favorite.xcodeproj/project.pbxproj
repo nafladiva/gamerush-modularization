@@ -19,7 +19,6 @@
 		305B379B2CFC27E20056CF0D /* FavoriteRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B37952CFC27E20056CF0D /* FavoriteRepositoryProtocol.swift */; };
 		305B379C2CFC27E20056CF0D /* FavoriteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B37972CFC27E20056CF0D /* FavoriteDataSource.swift */; };
 		305B379D2CFC27E20056CF0D /* FavoriteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B37982CFC27E20056CF0D /* FavoriteDataSourceProtocol.swift */; };
-		305B379F2CFC27EA0056CF0D /* LocalDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305B379E2CFC27EA0056CF0D /* LocalDatabase.framework */; };
 		305B37A32CFC29250056CF0D /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B37A22CFC29250056CF0D /* Injection.swift */; };
 		305B37A72CFC2A150056CF0D /* FavoritePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B37A62CFC2A150056CF0D /* FavoritePresenterProtocol.swift */; };
 		305B37A92CFC2A310056CF0D /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B37A82CFC2A310056CF0D /* FavoritePresenter.swift */; };
@@ -70,7 +69,6 @@
 				303AD3EA2CFC430000867DC8 /* Games.framework in Frameworks */,
 				303AD3A32CFC2E6F00867DC8 /* Common.framework in Frameworks */,
 				922A7AB52F3B860F5208DFE8 /* Pods_Favorite.framework in Frameworks */,
-				305B379F2CFC27EA0056CF0D /* LocalDatabase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

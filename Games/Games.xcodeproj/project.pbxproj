@@ -29,7 +29,6 @@
 		303AD3D52CFC307F00867DC8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD3CF2CFC307F00867DC8 /* MainViewController.swift */; };
 		303AD3D62CFC307F00867DC8 /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD3D12CFC307F00867DC8 /* GamePresenter.swift */; };
 		303AD3D72CFC307F00867DC8 /* GamePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD3D22CFC307F00867DC8 /* GamePresenterProtocol.swift */; };
-		303AD3D92CFC30C700867DC8 /* LocalDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AD3D82CFC30C700867DC8 /* LocalDatabase.framework */; };
 		303AD3DD2CFC30FB00867DC8 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303AD3DC2CFC30FB00867DC8 /* Common.framework */; };
 		303AD3E12CFC315000867DC8 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD3E02CFC315000867DC8 /* Injection.swift */; };
 /* End PBXBuildFile section */
@@ -72,7 +71,6 @@
 			files = (
 				303AD3DD2CFC30FB00867DC8 /* Common.framework in Frameworks */,
 				300C596BEE9C67A147B66600 /* Pods_Games.framework in Frameworks */,
-				303AD3D92CFC30C700867DC8 /* LocalDatabase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

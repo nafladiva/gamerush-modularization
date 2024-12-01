@@ -5,7 +5,7 @@
 //  Created by Nafla Diva Syafia on 01/12/24.
 //
 
-import LocalDatabase
+import Common
 import Foundation
 
 final class Injection: NSObject {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303AD3F12CFC480500867DC8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD3EE2CFC480500867DC8 /* CoreDataStack.swift */; };
+		303AD3F22CFC480500867DC8 /* GRCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 303AD3EF2CFC480500867DC8 /* GRCoreData.xcdatamodeld */; };
 		307668AE2CFC22580014AE55 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 307668AD2CFC22580014AE55 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3076A7852CFC2358006CDA6A /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076A77A2CFC2358006CDA6A /* GameTableViewCell.swift */; };
 		3076A7862CFC2358006CDA6A /* TableViewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076A77B2CFC2358006CDA6A /* TableViewLoader.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		303AD3EE2CFC480500867DC8 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		303AD3F02CFC480500867DC8 /* GRCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GRCoreData.xcdatamodel; sourceTree = "<group>"; };
 		307668AA2CFC22580014AE55 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		307668AD2CFC22580014AE55 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		3076A77A2CFC2358006CDA6A /* GameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		303AD3ED2CFC47DA00867DC8 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				303AD3EE2CFC480500867DC8 /* CoreDataStack.swift */,
+				303AD3EF2CFC480500867DC8 /* GRCoreData.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		307668A02CFC22580014AE55 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +97,7 @@
 		307668AC2CFC22580014AE55 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				303AD3ED2CFC47DA00867DC8 /* Database */,
 				3076A7802CFC2358006CDA6A /* Core */,
 				3076A77C2CFC2358006CDA6A /* Presentation */,
 				3076A7842CFC2358006CDA6A /* SupportingFiles */,
@@ -234,8 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303AD3F12CFC480500867DC8 /* CoreDataStack.swift in Sources */,
 				3076A7862CFC2358006CDA6A /* TableViewLoader.swift in Sources */,
 				3076A7872CFC2358006CDA6A /* GRColor.swift in Sources */,
+				303AD3F22CFC480500867DC8 /* GRCoreData.xcdatamodeld in Sources */,
 				3076A7852CFC2358006CDA6A /* GameTableViewCell.swift in Sources */,
 				3076A78A2CFC2358006CDA6A /* DateUtil.swift in Sources */,
 				3076A7882CFC2358006CDA6A /* GRError.swift in Sources */,
@@ -461,6 +477,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		303AD3EF2CFC480500867DC8 /* GRCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				303AD3F02CFC480500867DC8 /* GRCoreData.xcdatamodel */,
+			);
+			currentVersion = 303AD3F02CFC480500867DC8 /* GRCoreData.xcdatamodel */;
+			name = GRCoreData.xcdatamodeld;
+			path = "/Users/nafladiva/Documents/Swift/gamerush-modularization/Common/Common/Database/GRCoreData.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 307668A12CFC22580014AE55 /* Project object */;
 }
