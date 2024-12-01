@@ -12,12 +12,6 @@ workflows:
         script: |
           cd GameRush \
           pod install
-      - name: Build Debug App 0
-        script: |
-          xcodebuild build \
-            --workspace "$XCODE_WORKSPACE" \
-            --scheme "$XCODE_SCHEME" \
-            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
       - name: Build Debug App
         script: |
           xcodebuild build -workspace "$XCODE_WORKSPACE" \
