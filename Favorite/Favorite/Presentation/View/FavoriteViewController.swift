@@ -7,6 +7,7 @@
 
 import Combine
 import Common
+import Games
 import UIKit
 
 public class FavoriteViewController: UIViewController {
@@ -127,9 +128,8 @@ extension FavoriteViewController: UITableViewDelegate {
       _ tableView: UITableView,
       didSelectRowAt indexPath: IndexPath
     ) {
-        //TODO: import DetailScreen
-//        let detailViewController = DetailViewController()
-//        detailViewController.gameId = Int(favorites[indexPath.row].id ?? 0)
-//        self.navigationController?.pushViewController(detailViewController, animated: true)
+        let detailViewController = DetailViewController()
+        detailViewController.gameId = Int(favorites[indexPath.row].id ?? 0)
+        self.navigationController?.pushViewController(detailViewController, animated: true)
     }
 }

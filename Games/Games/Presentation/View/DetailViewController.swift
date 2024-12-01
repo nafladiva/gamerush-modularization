@@ -11,7 +11,7 @@ import UIKit
 
 public class DetailViewController: UIViewController {
     
-    var gameId: Int?
+    public var gameId: Int?
     var gameDetail: GameDetailEntity? = nil
     var isFavorite: Bool = false
     private var cancellables = Set<AnyCancellable>()
