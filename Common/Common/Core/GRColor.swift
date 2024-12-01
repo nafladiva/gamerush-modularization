@@ -11,15 +11,15 @@ public extension UIColor {
     static var primaryColor: UIColor {
         return .grPrimary
     }
-    
+
     static var backgroundColor: UIColor {
         return .grBackground
     }
-    
+
     static var foregroundColor: UIColor {
         return .grForeground
     }
-    
+
     static var textColor: UIColor {
         return .grText
     }

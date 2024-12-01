@@ -10,7 +10,7 @@ import Foundation
 struct GenreResponse: Codable {
     let id: Int
     let name: String
-    
+
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(Int.self, forKey: .id)

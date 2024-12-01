@@ -11,7 +11,7 @@ import UIKit
 struct GamesResponses: Codable {
     let count: Int
     let results: [GameResponse]
-    
+
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.count = try container.decode(Int.self, forKey: .count)
@@ -26,7 +26,7 @@ struct GameResponse: Codable {
     let backgroundImage: String
     let rating: Double
     let genres: [GenreResponse]
-    
+
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -35,7 +35,7 @@ struct GameResponse: Codable {
         case rating
         case genres
     }
-    
+
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(Int.self, forKey: .id)

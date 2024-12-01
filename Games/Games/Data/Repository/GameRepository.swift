@@ -13,11 +13,11 @@ import UIKit
 class GameRepository: GameRepositoryProtocol {
 
     private let gameDataSource: GameDataSourceProtocol
-    
+
     init(dataSource: GameDataSourceProtocol) {
         self.gameDataSource = dataSource
     }
-    
+
     func getGames() -> AnyPublisher<[GameEntity], any Error> {
         return gameDataSource.getGames()
             .tryMap { items in
@@ -25,7 +25,7 @@ class GameRepository: GameRepositoryProtocol {
             }
             .eraseToAnyPublisher()
     }
-    
+
     func getGameDetail(gameId: Int) -> AnyPublisher<GameDetailEntity, any Error> {
         return gameDataSource.getGameDetail(gameId: gameId)
             .tryMap { items in
@@ -33,17 +33,17 @@ class GameRepository: GameRepositoryProtocol {
             }
             .eraseToAnyPublisher()
     }
-    
+
     func checkFavoriteStatus(gameId: Int) -> AnyPublisher<Bool, any Error> {
         return gameDataSource.checkFavoriteStatus(gameId: gameId)
             .eraseToAnyPublisher()
     }
-    
+
     func addFavorite(_ id: Int, _ name: String, _ image: Data, _ genres: String, _ released: String, _ rating: Double) -> AnyPublisher<Bool, any Error> {
         return gameDataSource.addFavorite(id, name, image, genres, released, rating)
             .eraseToAnyPublisher()
     }
-    
+
     func removeFavorite(gameId: Int) -> AnyPublisher<Bool, any Error> {
         return gameDataSource.removeFavorite(gameId: gameId)
             .eraseToAnyPublisher()
@@ -53,12 +53,12 @@ class GameRepository: GameRepositoryProtocol {
 extension GameRepository {
     fileprivate func listMapper(
         input responses: GamesResponses
-    ) throws -> [GameEntity]  {
+    ) throws -> [GameEntity] {
         let gameReponses = responses.results
         return try gameReponses.map { result in
             let data = try Data(contentsOf: URL(string: result.backgroundImage)!)
             let image = UIImage(data: data)
-            
+
             return GameEntity(
                 id: result.id,
                 name: result.name,
@@ -71,13 +71,13 @@ extension GameRepository {
             )
         }
     }
-    
+
     fileprivate func detailMapper(
         input response: GameDetailResponse
     ) throws -> GameDetailEntity {
         let data = try Data(contentsOf: URL(string: response.backgroundImage)!)
         let image = UIImage(data: data)
-        
+
         return GameDetailEntity(
             id: response.id,
             name: response.name,

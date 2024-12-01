@@ -9,7 +9,7 @@ import Common
 import UIKit
 
 public class ProfileViewController: UIViewController {
-    
+
     let profileImage = UIImageView()
     let nameLabel = UILabel()
     let emailLabel = UILabel()
@@ -18,42 +18,51 @@ public class ProfileViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .backgroundColor
-        
+
         setupNavigationBar()
         setupProfileImage()
         setupNameLabel()
         setupEmailLabel()
         setupPortfolioInfo()
     }
-    
+
     public override func viewWillAppear(_ animated: Bool) {
         ProfileEntity.synchronize()
         nameLabel.text = ProfileEntity.name
         emailLabel.text = ProfileEntity.email
-        
+
     }
-    
+
     func setupNavigationBar() {
         let appearance = UINavigationBarAppearance()
         let titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor(named: "GRText", in: Bundle(identifier: "com.nafladiva.Common"), compatibleWith: .current)!
+            NSAttributedString.Key.foregroundColor: UIColor(
+                named: "GRText",
+                in: Bundle(identifier: "com.nafladiva.Common"),
+                compatibleWith: .current
+            )!
         ]
         appearance.titleTextAttributes = titleTextAttributes
         appearance.backgroundColor = .backgroundColor
-        
+
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         navigationController?.navigationBar.tintColor = .primaryColor
         navigationItem.title = "Profile"
-        
-        let editButtonBar = UIBarButtonItem(title: "Edit", image: UIImage(systemName: "square.and.arrow.up"), target: self, action: #selector(editProfile))
+
+        let editButtonBar = UIBarButtonItem(
+            title: "Edit",
+            image: UIImage(systemName: "square.and.arrow.up"),
+            target: self,
+            action: #selector(editProfile)
+        )
         navigationItem.rightBarButtonItems = [editButtonBar]
     }
-    
+
     @objc func editProfile() {
         self.navigationController?.pushViewController(EditProfileViewController(), animated: true)
     }
-    
+
     func setupProfileImage() {
         profileImage.image = UIImage(named: "Profile", in: Bundle(identifier: "com.nafladiva.Common"), with: .none)
         profileImage.contentMode = .scaleAspectFill
@@ -69,7 +78,7 @@ public class ProfileViewController: UIViewController {
             profileImage.heightAnchor.constraint(equalToConstant: 200)
         ])
     }
-    
+
     func setupNameLabel() {
         nameLabel.font = .systemFont(ofSize: 16.0, weight: .bold)
         nameLabel.textColor = .primaryColor
@@ -81,7 +90,7 @@ public class ProfileViewController: UIViewController {
             nameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
-    
+
     func setupEmailLabel() {
         emailLabel.font = .systemFont(ofSize: 14.0)
         emailLabel.textColor = .textColor
@@ -93,7 +102,7 @@ public class ProfileViewController: UIViewController {
             emailLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
-    
+
     func setupPortfolioInfo() {
         portfolioText.text = "See my web portfolio below!✨"
         portfolioText.font = .systemFont(ofSize: 12.0)
@@ -105,7 +114,7 @@ public class ProfileViewController: UIViewController {
             portfolioText.topAnchor.constraint(equalTo: emailLabel.bottomAnchor, constant: 32.0),
             portfolioText.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
-        
+
         let portfolioButton = UIButton()
         portfolioButton.backgroundColor = .primaryColor
         portfolioButton.setTitle("Portfolio", for: .normal)
@@ -121,7 +130,7 @@ public class ProfileViewController: UIViewController {
             portfolioButton.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
-    
+
     @objc func openPortfolio() {
         let portfolioUrl = "https://nafladiva.github.io"
         if let url = URL(string: portfolioUrl), UIApplication.shared.canOpenURL(url) {

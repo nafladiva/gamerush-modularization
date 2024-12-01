@@ -19,7 +19,7 @@ struct GameDetailResponse: Codable {
     let developers: [DeveloperResponse]
     let genres: [GenreResponse]
     let publishers: [PublisherResponse]
-    
+
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -32,7 +32,7 @@ struct GameDetailResponse: Codable {
         case genres
         case publishers
     }
-    
+
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(Int.self, forKey: .id)

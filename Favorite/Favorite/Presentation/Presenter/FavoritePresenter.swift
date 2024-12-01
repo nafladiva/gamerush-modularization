@@ -11,13 +11,12 @@ import Foundation
 class FavoritePresenter: FavoritePresenterProtocol {
 
     private let useCase: FavoriteUseCase
-    
+
     init(useCase: FavoriteUseCase) {
         self.useCase = useCase
     }
-    
+
     func getFavorites() -> AnyPublisher<[FavoriteEntity], any Error> {
         return useCase.getFavorites()
     }
 }
-

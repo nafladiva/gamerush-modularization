@@ -13,7 +13,7 @@ public class GameTableViewCell: UITableViewCell {
     public let releasedLabel = UILabel()
     public let genreLabel = UILabel()
     public let ratingLabel = UILabel()
-    
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupCellImage()
@@ -22,11 +22,11 @@ public class GameTableViewCell: UITableViewCell {
         setupReleasedLabel()
         setupRatingLabel()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     func setupCellImage() {
         cellImageView.contentMode = .scaleAspectFill
         cellImageView.layer.masksToBounds = true
@@ -41,7 +41,7 @@ public class GameTableViewCell: UITableViewCell {
             cellImageView.heightAnchor.constraint(equalToConstant: 80.0)
         ])
     }
-    
+
     func setupNameLabel() {
         nameLabel.font = .systemFont(ofSize: 14.0, weight: .semibold)
         nameLabel.textColor = .grText
@@ -53,7 +53,7 @@ public class GameTableViewCell: UITableViewCell {
             nameLabel.rightAnchor.constraint(greaterThanOrEqualTo: contentView.rightAnchor, constant: 16.0)
         ])
     }
-    
+
     func setupGenreLabel() {
         genreLabel.font = .systemFont(ofSize: 12.0, weight: .semibold)
         genreLabel.textColor = .grPrimary
@@ -66,7 +66,7 @@ public class GameTableViewCell: UITableViewCell {
             genreLabel.rightAnchor.constraint(greaterThanOrEqualTo: contentView.rightAnchor, constant: 16.0)
         ])
     }
-    
+
     func setupReleasedLabel() {
         releasedLabel.font = .systemFont(ofSize: 11.0)
         releasedLabel.textColor = .grText
@@ -78,7 +78,7 @@ public class GameTableViewCell: UITableViewCell {
             releasedLabel.rightAnchor.constraint(greaterThanOrEqualTo: contentView.rightAnchor, constant: 16.0)
         ])
     }
-    
+
     func setupRatingLabel() {
         ratingLabel.font = .systemFont(ofSize: 11.0, weight: .semibold)
         ratingLabel.textColor = .systemYellow

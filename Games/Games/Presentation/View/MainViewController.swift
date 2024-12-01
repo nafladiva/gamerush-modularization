@@ -10,32 +10,32 @@ import Common
 import UIKit
 
 public class MainViewController: UIViewController {
-    
+
     let tableView = UITableView()
-    
+
     private var cancellables = Set<AnyCancellable>()
     private var games: [GameEntity] = []
 
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .backgroundColor
-        
+
         setupNavigationBar()
         setupTableView()
         tableView.register(GameTableViewCell.self, forCellReuseIdentifier: "gameCell")
     }
-    
+
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if games.isEmpty {
             getGames()
         }
     }
-    
+
     func getGames() {
         let usecase = Injection.init().provideUseCase()
         let presenter = GamePresenter(useCase: usecase)
-        
+
         tableView.showLoading()
         presenter.getGames()
             .receive(on: RunLoop.main)
@@ -51,7 +51,7 @@ public class MainViewController: UIViewController {
             })
             .store(in: &self.cancellables)
     }
-    
+
     func setupNavigationBar() {
         let appearance = UINavigationBarAppearance()
         let titleTextAttributes = [
@@ -59,13 +59,13 @@ public class MainViewController: UIViewController {
         ]
         appearance.titleTextAttributes = titleTextAttributes
         appearance.backgroundColor = .backgroundColor
-        
+
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         navigationController?.navigationBar.tintColor = .primaryColor
         navigationItem.title = "🎮 GameRush"
     }
-    
+
     func setupTableView() {
         view.addSubview(tableView)
         tableView.backgroundColor = .backgroundColor
@@ -80,7 +80,7 @@ public class MainViewController: UIViewController {
         tableView.dataSource = self /// IMPORTANT | to register cells for tableView
         tableView.delegate = self /// IMPORTANT
     }
-    
+
     func showErrorAlert(message: String?) {
         let alert = UIAlertController(
             title: "Error",
@@ -98,7 +98,7 @@ extension MainViewController: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return games.count
     }
-    
+
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let game = games[indexPath.row]
         guard let tableCell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath) as? GameTableViewCell else {
@@ -106,7 +106,7 @@ extension MainViewController: UITableViewDataSource {
         }
         tableCell.backgroundColor = .backgroundColor
         tableCell.selectionStyle = .none
-        
+
         var genres = ""
         for genre in game.genres {
             if genres.isEmpty {
@@ -115,7 +115,7 @@ extension MainViewController: UITableViewDataSource {
                 genres += " • \(genre.name)"
             }
         }
-        
+
         DispatchQueue.main.async {
             tableCell.cellImageView.image = game.backgroundImage
             tableCell.nameLabel.text = game.name
@@ -123,7 +123,7 @@ extension MainViewController: UITableViewDataSource {
             tableCell.genreLabel.text = genres
             tableCell.ratingLabel.text = "★ \(game.rating)"
         }
-       
+
         return tableCell
     }
 

@@ -15,7 +15,7 @@ public class DateUtil {
         dateFormatterView.dateFormat = toFormat
         let formatted = dateFormatterResponse.date(from: responseDate)
         let formattedReleased = "Released on \(dateFormatterView.string(from: formatted!))"
-        
+
         return formattedReleased
     }
 }

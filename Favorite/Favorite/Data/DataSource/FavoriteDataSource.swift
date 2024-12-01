@@ -11,17 +11,17 @@ import Common
 import CoreData
 
 class FavoriteDataSource: FavoriteDataSourceProtocol {
-    
+
     private let coreDataStack: CoreDataStack
     private var cancellables = Set<AnyCancellable>()
-    
+
     init(coreDataStack: CoreDataStack) {
         self.coreDataStack = coreDataStack
     }
-    
+
     func getFavorites() -> AnyPublisher<[FavoriteEntity], Error> {
         let taskContext = coreDataStack.newTaskContext()
-        
+
         return Future { promise in
             taskContext.perform {
                 let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorite")

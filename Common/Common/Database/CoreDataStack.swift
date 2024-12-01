@@ -14,7 +14,7 @@ public class CoreDataStack {
     var context: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
-    
+
     public init() {
         let bundle = Bundle(for: CoreDataStack.self)
         let model = bundle
@@ -22,9 +22,9 @@ public class CoreDataStack {
             .flatMap { NSManagedObjectModel(contentsOf: $0) }!
         self.persistentContainer = NSPersistentContainer(name: "GRCoreData", managedObjectModel: model)
     }
-    
+
     public func loadPersistentStores(completion: @escaping (Error?) -> Void) {
-        persistentContainer.loadPersistentStores { (storeDescription, error) in
+        persistentContainer.loadPersistentStores { (_, error) in
             if let error = error {
                 completion(error)
             } else {
@@ -32,7 +32,7 @@ public class CoreDataStack {
             }
         }
     }
-    
+
     public func newTaskContext() -> NSManagedObjectContext {
         let taskContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         taskContext.parent = context

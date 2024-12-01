@@ -11,4 +11,3 @@ import Foundation
 protocol FavoritePresenterProtocol {
     func getFavorites() -> AnyPublisher<[FavoriteEntity], Error>
 }
-

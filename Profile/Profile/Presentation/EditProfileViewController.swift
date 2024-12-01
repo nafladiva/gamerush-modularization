@@ -9,7 +9,7 @@ import Common
 import UIKit
 
 class EditProfileViewController: UIViewController {
-    
+
     let titleLabel = UILabel()
     let nameTextField = UITextField()
     let emailTextField = UITextField()
@@ -20,13 +20,13 @@ class EditProfileViewController: UIViewController {
         view.backgroundColor = .backgroundColor
         setupUI()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         ProfileEntity.synchronize()
         nameTextField.text = ProfileEntity.name
         emailTextField.text = ProfileEntity.email
     }
-    
+
     func setupUI() {
         titleLabel.text = "Edit Profile"
         titleLabel.textColor = .textColor
@@ -39,7 +39,7 @@ class EditProfileViewController: UIViewController {
             titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16.0),
             titleLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16.0)
         ])
-        
+
         let textFieldFrame = CGRect(origin: CGPoint(x: 100, y: 300), size: CGSize(width: 200, height: 50))
         nameTextField.frame = textFieldFrame
         nameTextField.backgroundColor = .foregroundColor
@@ -53,7 +53,7 @@ class EditProfileViewController: UIViewController {
             nameTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16.0),
             nameTextField.heightAnchor.constraint(equalToConstant: 40)
         ])
-        
+
         emailTextField.frame = textFieldFrame
         emailTextField.backgroundColor = .foregroundColor
         emailTextField.layer.cornerRadius = 8.0
@@ -66,7 +66,7 @@ class EditProfileViewController: UIViewController {
             emailTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16.0),
             emailTextField.heightAnchor.constraint(equalToConstant: 40)
         ])
-        
+
         saveButton.backgroundColor = .primaryColor
         saveButton.setTitle("Save", for: .normal)
         saveButton.setTitleColor(.backgroundColor, for: .normal)
@@ -80,7 +80,7 @@ class EditProfileViewController: UIViewController {
             saveButton.widthAnchor.constraint(equalToConstant: 100),
             saveButton.heightAnchor.constraint(equalToConstant: 30)
         ])
-        
+
     }
 
     @objc func save(_ sender: Any) {
@@ -95,12 +95,12 @@ class EditProfileViewController: UIViewController {
             }
         }
     }
-    
+
     func saveProfile(_ name: String, _ email: String) {
         ProfileEntity.name = name
         ProfileEntity.email = email
     }
-    
+
     func alertTextEmpty(_ field: String) {
         let alert = UIAlertController(
             title: "Alert",

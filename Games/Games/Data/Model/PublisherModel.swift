@@ -12,14 +12,14 @@ struct PublisherResponse: Codable {
     let name: String
     let gamesCount: Int
     let imageBackground: String
-    
+
     enum CodingKeys: String, CodingKey {
         case id
         case name
         case gamesCount = "games_count"
         case imageBackground = "image_background"
     }
-    
+
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(Int.self, forKey: .id)

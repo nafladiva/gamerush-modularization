@@ -11,10 +11,10 @@ import Common
 import CoreData
 
 class GameDataSource: GameDataSourceProtocol {
-    
+
     private let coreDataStack: CoreDataStack
     private var cancellables = Set<AnyCancellable>()
-    
+
     init(coreDataStack: CoreDataStack) {
         self.coreDataStack = coreDataStack
     }
@@ -25,7 +25,7 @@ class GameDataSource: GameDataSourceProtocol {
             URLQueryItem(name: "key", value: GRSecret.apiKey)
         ]
         let request = URLRequest(url: components.url!)
-        
+
         return URLSession.shared.dataTaskPublisher(for: request)
                 .tryMap { (data, response) -> Data in
                     guard (response as? HTTPURLResponse)?.statusCode == 200 else {
@@ -36,14 +36,14 @@ class GameDataSource: GameDataSourceProtocol {
                 .decode(type: GamesResponses.self, decoder: JSONDecoder())
                 .eraseToAnyPublisher()
     }
-    
+
     func getGameDetail(gameId: Int) -> AnyPublisher<GameDetailResponse, Error> {
         var components = URLComponents(string: "https://api.rawg.io/api/games/\(gameId)")!
         components.queryItems = [
             URLQueryItem(name: "key", value: GRSecret.apiKey)
         ]
         let request = URLRequest(url: components.url!)
-        
+
         return URLSession.shared.dataTaskPublisher(for: request)
                 .tryMap { (data, response) -> Data in
                     guard (response as? HTTPURLResponse)?.statusCode == 200 else {
@@ -57,7 +57,7 @@ class GameDataSource: GameDataSourceProtocol {
 
     func checkFavoriteStatus(gameId: Int) -> AnyPublisher<Bool, any Error> {
         let taskContext = coreDataStack.newTaskContext()
-        
+
         return Future { promise in
             taskContext.perform {
                 let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorite")
@@ -77,7 +77,7 @@ class GameDataSource: GameDataSourceProtocol {
         }
         .eraseToAnyPublisher()
     }
-    
+
     func addFavorite(
         _ id: Int,
         _ name: String,
@@ -95,14 +95,14 @@ class GameDataSource: GameDataSourceProtocol {
                     return
                 }
                 let favorite = NSManagedObject(entity: entity, insertInto: taskContext)
-                
+
                 favorite.setValue(id, forKey: "id")
                 favorite.setValue(name, forKey: "name")
                 favorite.setValue(image, forKey: "image")
                 favorite.setValue(genres, forKey: "genres")
                 favorite.setValue(released, forKey: "released")
                 favorite.setValue(rating, forKey: "rating")
-                
+
                 do {
                     try taskContext.save()
                     try taskContext.parent?.save()
@@ -115,10 +115,10 @@ class GameDataSource: GameDataSourceProtocol {
         }
         .eraseToAnyPublisher()
     }
-    
+
     func removeFavorite(gameId: Int) -> AnyPublisher<Bool, any Error> {
         let taskContext = coreDataStack.newTaskContext()
-        
+
         return Future { promise in
             taskContext.perform {
                 let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Favorite")

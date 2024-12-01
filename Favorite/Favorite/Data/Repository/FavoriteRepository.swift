@@ -13,7 +13,7 @@ import UIKit
 class FavoriteRepository: FavoriteRepositoryProtocol {
 
     private let dataSource: FavoriteDataSourceProtocol
-    
+
     init(dataSource: FavoriteDataSourceProtocol) {
         self.dataSource = dataSource
     }

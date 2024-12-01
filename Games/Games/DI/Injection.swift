@@ -9,7 +9,7 @@ import Common
 import Foundation
 
 final class Injection: NSObject {
-    
+
     private func provideCoreData() -> CoreDataStack {
         let coreDataStack = CoreDataStack()
         coreDataStack.loadPersistentStores { error in
@@ -21,20 +21,20 @@ final class Injection: NSObject {
         }
         return coreDataStack
     }
- 
+
     private func provideDataSource() -> GameDataSourceProtocol {
         let coreDataStack = provideCoreData()
         return GameDataSource(coreDataStack: coreDataStack)
     }
- 
+
     private func provideRepository() -> GameRepositoryProtocol {
         let dataSource = provideDataSource()
         return GameRepository(dataSource: dataSource)
     }
- 
+
     func provideUseCase() -> GameUseCase {
         let repository = provideRepository()
         return GameInteractor(repository: repository)
     }
- 
+
 }
