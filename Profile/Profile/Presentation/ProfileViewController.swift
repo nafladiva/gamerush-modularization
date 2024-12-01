@@ -8,14 +8,14 @@
 import Common
 import UIKit
 
-class ProfileViewController: UIViewController {
+public class ProfileViewController: UIViewController {
     
     let profileImage = UIImageView()
     let nameLabel = UILabel()
     let emailLabel = UILabel()
     let portfolioText = UILabel()
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .backgroundColor
         
@@ -26,7 +26,7 @@ class ProfileViewController: UIViewController {
         setupPortfolioInfo()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         ProfileEntity.synchronize()
         nameLabel.text = ProfileEntity.name
         emailLabel.text = ProfileEntity.email

@@ -23,3 +23,7 @@ end
 target 'Favorite' do
   project '../Favorite/Favorite'
 end
+
+target 'Profile' do
+  project '../Profile/Profile'
+end

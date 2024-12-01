@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct ProfileEntity {
-    static let nameKey = "name"
-    static let emailKey = "email"
+public struct ProfileEntity {
+    public static let nameKey = "name"
+    public static let emailKey = "email"
     
     static var name: String {
         get {

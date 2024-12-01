@@ -5,6 +5,7 @@
 //  Created by Nafla Diva Syafia on 11/11/24.
 //
 
+import Profile
 import UIKit
 
 @main

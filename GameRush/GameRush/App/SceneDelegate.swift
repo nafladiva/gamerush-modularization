@@ -7,6 +7,7 @@
 
 import Common
 import Favorite
+import Profile
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
