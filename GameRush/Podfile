@@ -12,10 +12,6 @@ target 'Common' do
   project '../Common/Common'
 end
 
-target 'LocalDatabase' do
-  project '../LocalDatabase/LocalDatabase'
-end
-
 target 'Games' do
   project '../Games/Games'
 end

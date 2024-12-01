@@ -8,82 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		1D094AA800710133F3BB7AC114EE430F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		27276833A41FA6C09C2D8558389B6175 /* Pods-LocalDatabase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC456D31B45390AFA6BA2DF66C6067AF /* Pods-LocalDatabase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B0A7BA6EAA9C5979B878A3AE1459C1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		6E3AAA7493D054CE2433104A99A9A66C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8083C8E5ED4CF927DEC25BD81D8DFA8E /* Pods-GameRush-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8076BE6E13CC6C64BB5B8577E6CB3C1F /* Pods-GameRush-dummy.m */; };
+		8083C8E5ED4CF927DEC25BD81D8DFA8E /* Pods-GameRush-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 195F6872C7190FEA7BAF63B3CADDDC4E /* Pods-GameRush-dummy.m */; };
 		8363297622F7D025062B6F76FA4F25E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		848C5B09409764922AB464A8BDB9C8F8 /* Pods-Profile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 881930BFE498CA8F4EBC54223429B06D /* Pods-Profile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A03FB8D495CE5751018FD188A3AA45E5 /* Pods-Games-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D67AD463868C49E62E43025B648CBCE7 /* Pods-Games-dummy.m */; };
-		A1B383BF00C11D2F5DFAB03121C64DD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		848C5B09409764922AB464A8BDB9C8F8 /* Pods-Profile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8333C693EE703666660C70504EF4438A /* Pods-Profile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A03FB8D495CE5751018FD188A3AA45E5 /* Pods-Games-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 335D89AB1B9519F0450BBC9908223D52 /* Pods-Games-dummy.m */; };
 		A415C7241485BCDEAD15E2DFD329A857 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A5C0768C3E650D3E771FEEAC169B7EC5 /* Pods-Favorite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE166DD88F7AF14EB0E881F9C82E174 /* Pods-Favorite-dummy.m */; };
-		AA859BA5CCB009E9FBA02B2A099DF329 /* Pods-Favorite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38F0DE049D39EFEE1CBAD232C3E7326A /* Pods-Favorite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE4FB6B68B22A636600D53863E6A1EE4 /* Pods-LocalDatabase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E086F16A4B65F35D3F55F6456F01DF /* Pods-LocalDatabase-dummy.m */; };
-		BAD891881BEECBB58CFFFD590D59F457 /* Pods-Common-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 248DCEBB2AC2ED258B31BF7306ED9B50 /* Pods-Common-dummy.m */; };
-		C3340E4E0E2CB77947D98F1F32A0C490 /* Pods-GameRush-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E108F6FE53287749670EC9907EFC642 /* Pods-GameRush-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBC92486548C0466A94723878CBA3217 /* Pods-Profile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33332A7CAACF0E98012F42653A288ADA /* Pods-Profile-dummy.m */; };
-		D22C44743084BB25EAF837C7997E2AF2 /* Pods-Common-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D2F2A33A2AFD773CE6D7E343FD7526 /* Pods-Common-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8B1E3E2FC7445F4BB4E890B4810BD09 /* Pods-Games-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B14AE86FEE82DA7B44E37794703623ED /* Pods-Games-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5C0768C3E650D3E771FEEAC169B7EC5 /* Pods-Favorite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B7594B75CEC4E813CA7A218434F52E /* Pods-Favorite-dummy.m */; };
+		AA859BA5CCB009E9FBA02B2A099DF329 /* Pods-Favorite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC28FB20E9C408A94EEBA72004C3521C /* Pods-Favorite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAD891881BEECBB58CFFFD590D59F457 /* Pods-Common-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D735229A9B4C00EF0989848B5116552F /* Pods-Common-dummy.m */; };
+		C3340E4E0E2CB77947D98F1F32A0C490 /* Pods-GameRush-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93D2D0F181974FBD35BE1AC1C2938D28 /* Pods-GameRush-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBC92486548C0466A94723878CBA3217 /* Pods-Profile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A838333B82EA9E6BBA4F6931D0F22B /* Pods-Profile-dummy.m */; };
+		D22C44743084BB25EAF837C7997E2AF2 /* Pods-Common-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F5D6DBD124CB122BB114428C4BAE14E /* Pods-Common-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8B1E3E2FC7445F4BB4E890B4810BD09 /* Pods-Games-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B892652BE3C35C10C2AE51617D2122E9 /* Pods-Games-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02420FF3A3C61E1DAD3D6C776A263837 /* Pods-Favorite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Favorite-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0DBC08D7E85C04DB49FA76F49E04AA13 /* Pods-Favorite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Favorite.release.xcconfig"; sourceTree = "<group>"; };
-		0DDDD461E4BBAEB19F1443330C5B2FC4 /* Pods-Common.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Common.modulemap"; sourceTree = "<group>"; };
+		02811A50F0ECD46F68D6772EA97979AA /* Pods-Games-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Games-Info.plist"; sourceTree = "<group>"; };
 		0F4D620C44EF1CE7342240BAC295F02A /* Pods-Common */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Common"; path = Pods_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		101F35005A76D836BC5851CE0EBBB04B /* Pods-Profile-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Profile-Info.plist"; sourceTree = "<group>"; };
-		13E086F16A4B65F35D3F55F6456F01DF /* Pods-LocalDatabase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalDatabase-dummy.m"; sourceTree = "<group>"; };
-		14E28ED30149D2C9C8EDB6F267466BD8 /* Pods-Games-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Games-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1BDFD11A860DC154D8F40FFC26A127AE /* Pods-Profile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Profile.debug.xcconfig"; sourceTree = "<group>"; };
-		1F9949BCA6F6847CF8099A6CD9ED968D /* Pods-Games.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Games.modulemap"; sourceTree = "<group>"; };
-		217494E16960A47646F01383162474B1 /* Pods-Favorite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Favorite.debug.xcconfig"; sourceTree = "<group>"; };
-		248DCEBB2AC2ED258B31BF7306ED9B50 /* Pods-Common-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Common-dummy.m"; sourceTree = "<group>"; };
+		12DEE595CAAE419BCF341DF6E65A498B /* Pods-GameRush-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GameRush-acknowledgements.plist"; sourceTree = "<group>"; };
+		195F6872C7190FEA7BAF63B3CADDDC4E /* Pods-GameRush-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GameRush-dummy.m"; sourceTree = "<group>"; };
+		1CDE9B6E4A9DB12EA8202DCB018BBBF1 /* Pods-GameRush.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GameRush.modulemap"; sourceTree = "<group>"; };
 		261E22F1AD2922734A52B238D2B27201 /* Pods-Games */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Games"; path = Pods_Games.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28E0B964E523B72491DB22BE2D010146 /* Pods-LocalDatabase-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalDatabase-acknowledgements.markdown"; sourceTree = "<group>"; };
-		32D2F2A33A2AFD773CE6D7E343FD7526 /* Pods-Common-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Common-umbrella.h"; sourceTree = "<group>"; };
-		33332A7CAACF0E98012F42653A288ADA /* Pods-Profile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Profile-dummy.m"; sourceTree = "<group>"; };
-		34636CE17F9F4C183ACD14D5D7570532 /* Pods-Common-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Common-acknowledgements.markdown"; sourceTree = "<group>"; };
-		388EBE9E1A483B32D4BB44AE28261807 /* Pods-Games.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Games.release.xcconfig"; sourceTree = "<group>"; };
-		38F0DE049D39EFEE1CBAD232C3E7326A /* Pods-Favorite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Favorite-umbrella.h"; sourceTree = "<group>"; };
-		48546A1A1BF253F980A2DCFF0AFDE90D /* Pods-Games-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Games-Info.plist"; sourceTree = "<group>"; };
-		4C0464BC996E2585A2A5F2D689728DE4 /* Pods-Profile-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Profile-acknowledgements.markdown"; sourceTree = "<group>"; };
-		50B605D3110B3E7EA45BBB3864E59FAD /* Pods-LocalDatabase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocalDatabase.modulemap"; sourceTree = "<group>"; };
-		57918CADA8781CE77D920BA4A8A53AD3 /* Pods-LocalDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalDatabase.release.xcconfig"; sourceTree = "<group>"; };
-		606D0A2F1FE01607A1C1604C21850569 /* Pods-LocalDatabase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalDatabase-Info.plist"; sourceTree = "<group>"; };
-		60B5AF424E6216224ED9B7FB55EEA13D /* Pods-Profile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Profile.modulemap"; sourceTree = "<group>"; };
-		63BDD47A60DF33092A4C3D41E9FDD84C /* Pods-Common-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Common-acknowledgements.plist"; sourceTree = "<group>"; };
+		2882EDAB99F388CA76EFB9E14C75B663 /* Pods-Common.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Common.modulemap"; sourceTree = "<group>"; };
+		2BEBB19CFB8499E0C9E320E361B1937C /* Pods-Favorite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Favorite.release.xcconfig"; sourceTree = "<group>"; };
+		335D89AB1B9519F0450BBC9908223D52 /* Pods-Games-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Games-dummy.m"; sourceTree = "<group>"; };
+		349F2B91C1C4ACF9E149299FA86F35B0 /* Pods-Favorite-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Favorite-Info.plist"; sourceTree = "<group>"; };
+		40281037CD71FF56A30E0E00B9CDFF48 /* Pods-Profile-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Profile-acknowledgements.markdown"; sourceTree = "<group>"; };
+		426D21D1BF435071BAB20EF65AFE4F47 /* Pods-Favorite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Favorite-acknowledgements.plist"; sourceTree = "<group>"; };
+		46E16874517B8C81464CFE52C6E236AB /* Pods-GameRush-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GameRush-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50B0018538EA85AECB50969A38C590A0 /* Pods-Common-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Common-acknowledgements.markdown"; sourceTree = "<group>"; };
+		53A17B467FFCC352E83D8F7C0C890552 /* Pods-Games.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Games.modulemap"; sourceTree = "<group>"; };
+		56AC3AFDB8A58FCDFAD388D832CCA07A /* Pods-Profile-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Profile-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A993A2BAFD181FF3B1922B56CAF387E /* Pods-Profile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Profile.release.xcconfig"; sourceTree = "<group>"; };
+		5F5D6DBD124CB122BB114428C4BAE14E /* Pods-Common-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Common-umbrella.h"; sourceTree = "<group>"; };
 		653E35F358681BB7630E7DCF3EDA151C /* Pods-GameRush */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GameRush"; path = Pods_GameRush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A82ACD1153DDC753A082793E8FC9AE1 /* Pods-GameRush.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GameRush.modulemap"; sourceTree = "<group>"; };
-		6B8A5AE45420222827C88E4E8451AA64 /* Pods-Favorite-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Favorite-Info.plist"; sourceTree = "<group>"; };
-		6E108F6FE53287749670EC9907EFC642 /* Pods-GameRush-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GameRush-umbrella.h"; sourceTree = "<group>"; };
+		725AFAC5E567B2FE44FF0D02ED82A36D /* Pods-Games-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Games-acknowledgements.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		748EC3BF58E2D9FE6F17D46467EA611D /* Pods-Favorite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Favorite.modulemap"; sourceTree = "<group>"; };
-		75145C7A2E8067DEF5CB6E2D843A1B81 /* Pods-GameRush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GameRush.debug.xcconfig"; sourceTree = "<group>"; };
-		7A7C87ADAB350B2F90C1A3A04F5E1F51 /* Pods-LocalDatabase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LocalDatabase"; path = Pods_LocalDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8076BE6E13CC6C64BB5B8577E6CB3C1F /* Pods-GameRush-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GameRush-dummy.m"; sourceTree = "<group>"; };
-		881930BFE498CA8F4EBC54223429B06D /* Pods-Profile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Profile-umbrella.h"; sourceTree = "<group>"; };
-		8A6E549D6E5F62677FC077B0ADA2F657 /* Pods-LocalDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		79A838333B82EA9E6BBA4F6931D0F22B /* Pods-Profile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Profile-dummy.m"; sourceTree = "<group>"; };
+		7AA3F7BCAD512871C93AD1BCF40E452C /* Pods-Favorite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Favorite-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8333C693EE703666660C70504EF4438A /* Pods-Profile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Profile-umbrella.h"; sourceTree = "<group>"; };
 		8DDC4CF90860C8DFB2C89D51DA3C5DD3 /* Pods-Profile */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Profile"; path = Pods_Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		994DFEB14028289CF2F90458DD2402D7 /* Pods-Favorite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Favorite-acknowledgements.plist"; sourceTree = "<group>"; };
-		99E22F9EE9F72264D7508C91BED4C3E3 /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
+		93D2D0F181974FBD35BE1AC1C2938D28 /* Pods-GameRush-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GameRush-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FE166DD88F7AF14EB0E881F9C82E174 /* Pods-Favorite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Favorite-dummy.m"; sourceTree = "<group>"; };
-		A68940510E90C6AEF53EFEF33309F78A /* Pods-LocalDatabase-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalDatabase-acknowledgements.plist"; sourceTree = "<group>"; };
-		AC100BA911AB5505B2A8047F1D96F8BA /* Pods-Profile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Profile.release.xcconfig"; sourceTree = "<group>"; };
-		B14AE86FEE82DA7B44E37794703623ED /* Pods-Games-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Games-umbrella.h"; sourceTree = "<group>"; };
-		BC71BD6B673C546A92C48A7861C4A699 /* Pods-GameRush-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GameRush-acknowledgements.plist"; sourceTree = "<group>"; };
-		C0AFE9F5E432498073BCF22EAE479888 /* Pods-GameRush-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GameRush-Info.plist"; sourceTree = "<group>"; };
+		A31C6A2944E501271A1C7343709D551C /* Pods-GameRush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GameRush.debug.xcconfig"; sourceTree = "<group>"; };
+		A6B7594B75CEC4E813CA7A218434F52E /* Pods-Favorite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Favorite-dummy.m"; sourceTree = "<group>"; };
+		B892652BE3C35C10C2AE51617D2122E9 /* Pods-Games-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Games-umbrella.h"; sourceTree = "<group>"; };
 		C1C09B2B0371384CF44427A0E1FDE845 /* Pods-Favorite */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Favorite"; path = Pods_Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C201FE99F16D428483A4B23F1F56BF0F /* Pods-Games.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Games.debug.xcconfig"; sourceTree = "<group>"; };
-		C72E766086208902FC767EB017494B3B /* Pods-Games-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Games-acknowledgements.plist"; sourceTree = "<group>"; };
-		CFBEF3933F41DBB209491917B1D6D05D /* Pods-GameRush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GameRush.release.xcconfig"; sourceTree = "<group>"; };
-		D67AD463868C49E62E43025B648CBCE7 /* Pods-Games-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Games-dummy.m"; sourceTree = "<group>"; };
-		D722D3FDD5AA73A50302244216820AF2 /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
-		DC456D31B45390AFA6BA2DF66C6067AF /* Pods-LocalDatabase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalDatabase-umbrella.h"; sourceTree = "<group>"; };
-		DFC82BA9B13E41DFAF6A38091155119F /* Pods-GameRush-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GameRush-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E9667237EA622F04CE69AC1A65414C0B /* Pods-Profile-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Profile-acknowledgements.plist"; sourceTree = "<group>"; };
-		F77AA2B1F22BD3BC4276A893628321A4 /* Pods-Common-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Common-Info.plist"; sourceTree = "<group>"; };
+		C5E37B551C70C39A82EEF84B62F0F0B9 /* Pods-Common-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Common-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA52ABF018F3701D676DE4AD62920822 /* Pods-GameRush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GameRush.release.xcconfig"; sourceTree = "<group>"; };
+		D4073AC41EFF16A7315BE89C2E895F0B /* Pods-Common-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Common-Info.plist"; sourceTree = "<group>"; };
+		D735229A9B4C00EF0989848B5116552F /* Pods-Common-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Common-dummy.m"; sourceTree = "<group>"; };
+		E0645765AC92E290B126940DB12C81EB /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
+		E0E539066298BB6C0501A0274E14206C /* Pods-Profile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Profile.debug.xcconfig"; sourceTree = "<group>"; };
+		E20003248A885D3AE4C4E63BD55056CA /* Pods-Profile-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Profile-Info.plist"; sourceTree = "<group>"; };
+		E3835FB95854F87A714A9755C7683FBD /* Pods-Profile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Profile.modulemap"; sourceTree = "<group>"; };
+		E6076AF23687514C5C599F1487D4D8F5 /* Pods-Games.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Games.release.xcconfig"; sourceTree = "<group>"; };
+		E62D7C6CD6FFBCE52422472E8DFD2C8A /* Pods-Favorite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Favorite.debug.xcconfig"; sourceTree = "<group>"; };
+		E937AC00C2C6B3BF64073F2F39F7C6C9 /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
+		EC28FB20E9C408A94EEBA72004C3521C /* Pods-Favorite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Favorite-umbrella.h"; sourceTree = "<group>"; };
+		EFB41754482632E00DC3C38C57DEC096 /* Pods-Favorite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Favorite.modulemap"; sourceTree = "<group>"; };
+		FAC9183AC2C07AE298B3E11CC2264E6D /* Pods-GameRush-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GameRush-Info.plist"; sourceTree = "<group>"; };
+		FEB925600379E82634288F4FB0A1D667 /* Pods-Games.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Games.debug.xcconfig"; sourceTree = "<group>"; };
+		FF43AFB26C75D544152CCC8AA4DFDC7F /* Pods-Games-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Games-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,14 +99,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		776E3A10A142150527AFB19EE82D600E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1B383BF00C11D2F5DFAB03121C64DD1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C1FDF0CADAE56273561A1730DFA6DC39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,17 +118,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22313CC8E9897C182ADCF2B9B511F34A /* Targets Support Files */ = {
+		04F457858F566F42A643F37FA139C930 /* Pods-GameRush */ = {
 			isa = PBXGroup;
 			children = (
-				72A69CABC4CA69B2DBF8F48145791AB5 /* Pods-Common */,
-				BC3E67324EE1DECD50B879A1437D354F /* Pods-Favorite */,
-				67F8605D2F559D3BE2B81173BCAEE8FF /* Pods-GameRush */,
-				D17543476C77C058DB918362214172CE /* Pods-Games */,
-				629FC2D7D7D996C1C3100137A6D699FB /* Pods-LocalDatabase */,
-				59DE52E19809C23E43D2030EB783758D /* Pods-Profile */,
+				1CDE9B6E4A9DB12EA8202DCB018BBBF1 /* Pods-GameRush.modulemap */,
+				46E16874517B8C81464CFE52C6E236AB /* Pods-GameRush-acknowledgements.markdown */,
+				12DEE595CAAE419BCF341DF6E65A498B /* Pods-GameRush-acknowledgements.plist */,
+				195F6872C7190FEA7BAF63B3CADDDC4E /* Pods-GameRush-dummy.m */,
+				FAC9183AC2C07AE298B3E11CC2264E6D /* Pods-GameRush-Info.plist */,
+				93D2D0F181974FBD35BE1AC1C2938D28 /* Pods-GameRush-umbrella.h */,
+				A31C6A2944E501271A1C7343709D551C /* Pods-GameRush.debug.xcconfig */,
+				CA52ABF018F3701D676DE4AD62920822 /* Pods-GameRush.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-GameRush";
+			path = "Target Support Files/Pods-GameRush";
+			sourceTree = "<group>";
+		};
+		0D6DDA576FA0E4CC9F560C1973945D3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F4D620C44EF1CE7342240BAC295F02A /* Pods-Common */,
+				C1C09B2B0371384CF44427A0E1FDE845 /* Pods-Favorite */,
+				653E35F358681BB7630E7DCF3EDA151C /* Pods-GameRush */,
+				261E22F1AD2922734A52B238D2B27201 /* Pods-Games */,
+				8DDC4CF90860C8DFB2C89D51DA3C5DD3 /* Pods-Profile */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		198FEC8CD1A622C32C3BBEB4DFCAECA4 /* Pods-Games */ = {
+			isa = PBXGroup;
+			children = (
+				53A17B467FFCC352E83D8F7C0C890552 /* Pods-Games.modulemap */,
+				FF43AFB26C75D544152CCC8AA4DFDC7F /* Pods-Games-acknowledgements.markdown */,
+				725AFAC5E567B2FE44FF0D02ED82A36D /* Pods-Games-acknowledgements.plist */,
+				335D89AB1B9519F0450BBC9908223D52 /* Pods-Games-dummy.m */,
+				02811A50F0ECD46F68D6772EA97979AA /* Pods-Games-Info.plist */,
+				B892652BE3C35C10C2AE51617D2122E9 /* Pods-Games-umbrella.h */,
+				FEB925600379E82634288F4FB0A1D667 /* Pods-Games.debug.xcconfig */,
+				E6076AF23687514C5C599F1487D4D8F5 /* Pods-Games.release.xcconfig */,
+			);
+			name = "Pods-Games";
+			path = "Target Support Files/Pods-Games";
+			sourceTree = "<group>";
+		};
+		33E7353879FE8DFE92209578943117A7 /* Pods-Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				EFB41754482632E00DC3C38C57DEC096 /* Pods-Favorite.modulemap */,
+				7AA3F7BCAD512871C93AD1BCF40E452C /* Pods-Favorite-acknowledgements.markdown */,
+				426D21D1BF435071BAB20EF65AFE4F47 /* Pods-Favorite-acknowledgements.plist */,
+				A6B7594B75CEC4E813CA7A218434F52E /* Pods-Favorite-dummy.m */,
+				349F2B91C1C4ACF9E149299FA86F35B0 /* Pods-Favorite-Info.plist */,
+				EC28FB20E9C408A94EEBA72004C3521C /* Pods-Favorite-umbrella.h */,
+				E62D7C6CD6FFBCE52422472E8DFD2C8A /* Pods-Favorite.debug.xcconfig */,
+				2BEBB19CFB8499E0C9E320E361B1937C /* Pods-Favorite.release.xcconfig */,
+			);
+			name = "Pods-Favorite";
+			path = "Target Support Files/Pods-Favorite";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -159,97 +186,48 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		59DE52E19809C23E43D2030EB783758D /* Pods-Profile */ = {
+		7D3C4F7C9EBC4BD65CF96080972896BD /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				60B5AF424E6216224ED9B7FB55EEA13D /* Pods-Profile.modulemap */,
-				4C0464BC996E2585A2A5F2D689728DE4 /* Pods-Profile-acknowledgements.markdown */,
-				E9667237EA622F04CE69AC1A65414C0B /* Pods-Profile-acknowledgements.plist */,
-				33332A7CAACF0E98012F42653A288ADA /* Pods-Profile-dummy.m */,
-				101F35005A76D836BC5851CE0EBBB04B /* Pods-Profile-Info.plist */,
-				881930BFE498CA8F4EBC54223429B06D /* Pods-Profile-umbrella.h */,
-				1BDFD11A860DC154D8F40FFC26A127AE /* Pods-Profile.debug.xcconfig */,
-				AC100BA911AB5505B2A8047F1D96F8BA /* Pods-Profile.release.xcconfig */,
+				901C49B28A5D28E229ABB98D438C55EF /* Pods-Common */,
+				33E7353879FE8DFE92209578943117A7 /* Pods-Favorite */,
+				04F457858F566F42A643F37FA139C930 /* Pods-GameRush */,
+				198FEC8CD1A622C32C3BBEB4DFCAECA4 /* Pods-Games */,
+				9B42188ED0C2C6F0B03F5881A741340B /* Pods-Profile */,
 			);
-			name = "Pods-Profile";
-			path = "Target Support Files/Pods-Profile";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		629FC2D7D7D996C1C3100137A6D699FB /* Pods-LocalDatabase */ = {
+		901C49B28A5D28E229ABB98D438C55EF /* Pods-Common */ = {
 			isa = PBXGroup;
 			children = (
-				50B605D3110B3E7EA45BBB3864E59FAD /* Pods-LocalDatabase.modulemap */,
-				28E0B964E523B72491DB22BE2D010146 /* Pods-LocalDatabase-acknowledgements.markdown */,
-				A68940510E90C6AEF53EFEF33309F78A /* Pods-LocalDatabase-acknowledgements.plist */,
-				13E086F16A4B65F35D3F55F6456F01DF /* Pods-LocalDatabase-dummy.m */,
-				606D0A2F1FE01607A1C1604C21850569 /* Pods-LocalDatabase-Info.plist */,
-				DC456D31B45390AFA6BA2DF66C6067AF /* Pods-LocalDatabase-umbrella.h */,
-				8A6E549D6E5F62677FC077B0ADA2F657 /* Pods-LocalDatabase.debug.xcconfig */,
-				57918CADA8781CE77D920BA4A8A53AD3 /* Pods-LocalDatabase.release.xcconfig */,
-			);
-			name = "Pods-LocalDatabase";
-			path = "Target Support Files/Pods-LocalDatabase";
-			sourceTree = "<group>";
-		};
-		67F8605D2F559D3BE2B81173BCAEE8FF /* Pods-GameRush */ = {
-			isa = PBXGroup;
-			children = (
-				6A82ACD1153DDC753A082793E8FC9AE1 /* Pods-GameRush.modulemap */,
-				DFC82BA9B13E41DFAF6A38091155119F /* Pods-GameRush-acknowledgements.markdown */,
-				BC71BD6B673C546A92C48A7861C4A699 /* Pods-GameRush-acknowledgements.plist */,
-				8076BE6E13CC6C64BB5B8577E6CB3C1F /* Pods-GameRush-dummy.m */,
-				C0AFE9F5E432498073BCF22EAE479888 /* Pods-GameRush-Info.plist */,
-				6E108F6FE53287749670EC9907EFC642 /* Pods-GameRush-umbrella.h */,
-				75145C7A2E8067DEF5CB6E2D843A1B81 /* Pods-GameRush.debug.xcconfig */,
-				CFBEF3933F41DBB209491917B1D6D05D /* Pods-GameRush.release.xcconfig */,
-			);
-			name = "Pods-GameRush";
-			path = "Target Support Files/Pods-GameRush";
-			sourceTree = "<group>";
-		};
-		72A69CABC4CA69B2DBF8F48145791AB5 /* Pods-Common */ = {
-			isa = PBXGroup;
-			children = (
-				0DDDD461E4BBAEB19F1443330C5B2FC4 /* Pods-Common.modulemap */,
-				34636CE17F9F4C183ACD14D5D7570532 /* Pods-Common-acknowledgements.markdown */,
-				63BDD47A60DF33092A4C3D41E9FDD84C /* Pods-Common-acknowledgements.plist */,
-				248DCEBB2AC2ED258B31BF7306ED9B50 /* Pods-Common-dummy.m */,
-				F77AA2B1F22BD3BC4276A893628321A4 /* Pods-Common-Info.plist */,
-				32D2F2A33A2AFD773CE6D7E343FD7526 /* Pods-Common-umbrella.h */,
-				D722D3FDD5AA73A50302244216820AF2 /* Pods-Common.debug.xcconfig */,
-				99E22F9EE9F72264D7508C91BED4C3E3 /* Pods-Common.release.xcconfig */,
+				2882EDAB99F388CA76EFB9E14C75B663 /* Pods-Common.modulemap */,
+				50B0018538EA85AECB50969A38C590A0 /* Pods-Common-acknowledgements.markdown */,
+				C5E37B551C70C39A82EEF84B62F0F0B9 /* Pods-Common-acknowledgements.plist */,
+				D735229A9B4C00EF0989848B5116552F /* Pods-Common-dummy.m */,
+				D4073AC41EFF16A7315BE89C2E895F0B /* Pods-Common-Info.plist */,
+				5F5D6DBD124CB122BB114428C4BAE14E /* Pods-Common-umbrella.h */,
+				E0645765AC92E290B126940DB12C81EB /* Pods-Common.debug.xcconfig */,
+				E937AC00C2C6B3BF64073F2F39F7C6C9 /* Pods-Common.release.xcconfig */,
 			);
 			name = "Pods-Common";
 			path = "Target Support Files/Pods-Common";
 			sourceTree = "<group>";
 		};
-		BC3E67324EE1DECD50B879A1437D354F /* Pods-Favorite */ = {
+		9B42188ED0C2C6F0B03F5881A741340B /* Pods-Profile */ = {
 			isa = PBXGroup;
 			children = (
-				748EC3BF58E2D9FE6F17D46467EA611D /* Pods-Favorite.modulemap */,
-				02420FF3A3C61E1DAD3D6C776A263837 /* Pods-Favorite-acknowledgements.markdown */,
-				994DFEB14028289CF2F90458DD2402D7 /* Pods-Favorite-acknowledgements.plist */,
-				9FE166DD88F7AF14EB0E881F9C82E174 /* Pods-Favorite-dummy.m */,
-				6B8A5AE45420222827C88E4E8451AA64 /* Pods-Favorite-Info.plist */,
-				38F0DE049D39EFEE1CBAD232C3E7326A /* Pods-Favorite-umbrella.h */,
-				217494E16960A47646F01383162474B1 /* Pods-Favorite.debug.xcconfig */,
-				0DBC08D7E85C04DB49FA76F49E04AA13 /* Pods-Favorite.release.xcconfig */,
+				E3835FB95854F87A714A9755C7683FBD /* Pods-Profile.modulemap */,
+				40281037CD71FF56A30E0E00B9CDFF48 /* Pods-Profile-acknowledgements.markdown */,
+				56AC3AFDB8A58FCDFAD388D832CCA07A /* Pods-Profile-acknowledgements.plist */,
+				79A838333B82EA9E6BBA4F6931D0F22B /* Pods-Profile-dummy.m */,
+				E20003248A885D3AE4C4E63BD55056CA /* Pods-Profile-Info.plist */,
+				8333C693EE703666660C70504EF4438A /* Pods-Profile-umbrella.h */,
+				E0E539066298BB6C0501A0274E14206C /* Pods-Profile.debug.xcconfig */,
+				5A993A2BAFD181FF3B1922B56CAF387E /* Pods-Profile.release.xcconfig */,
 			);
-			name = "Pods-Favorite";
-			path = "Target Support Files/Pods-Favorite";
-			sourceTree = "<group>";
-		};
-		C24CD0D0582B65D985178C37549F99E7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0F4D620C44EF1CE7342240BAC295F02A /* Pods-Common */,
-				C1C09B2B0371384CF44427A0E1FDE845 /* Pods-Favorite */,
-				653E35F358681BB7630E7DCF3EDA151C /* Pods-GameRush */,
-				261E22F1AD2922734A52B238D2B27201 /* Pods-Games */,
-				7A7C87ADAB350B2F90C1A3A04F5E1F51 /* Pods-LocalDatabase */,
-				8DDC4CF90860C8DFB2C89D51DA3C5DD3 /* Pods-Profile */,
-			);
-			name = Products;
+			name = "Pods-Profile";
+			path = "Target Support Files/Pods-Profile";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -257,25 +235,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				C24CD0D0582B65D985178C37549F99E7 /* Products */,
-				22313CC8E9897C182ADCF2B9B511F34A /* Targets Support Files */,
+				0D6DDA576FA0E4CC9F560C1973945D3E /* Products */,
+				7D3C4F7C9EBC4BD65CF96080972896BD /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D17543476C77C058DB918362214172CE /* Pods-Games */ = {
-			isa = PBXGroup;
-			children = (
-				1F9949BCA6F6847CF8099A6CD9ED968D /* Pods-Games.modulemap */,
-				14E28ED30149D2C9C8EDB6F267466BD8 /* Pods-Games-acknowledgements.markdown */,
-				C72E766086208902FC767EB017494B3B /* Pods-Games-acknowledgements.plist */,
-				D67AD463868C49E62E43025B648CBCE7 /* Pods-Games-dummy.m */,
-				48546A1A1BF253F980A2DCFF0AFDE90D /* Pods-Games-Info.plist */,
-				B14AE86FEE82DA7B44E37794703623ED /* Pods-Games-umbrella.h */,
-				C201FE99F16D428483A4B23F1F56BF0F /* Pods-Games.debug.xcconfig */,
-				388EBE9E1A483B32D4BB44AE28261807 /* Pods-Games.release.xcconfig */,
-			);
-			name = "Pods-Games";
-			path = "Target Support Files/Pods-Games";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -302,14 +264,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B1E3E2FC7445F4BB4E890B4810BD09 /* Pods-Games-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BDCC2D08D160832BDDE3726B161364AA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				27276833A41FA6C09C2D8558389B6175 /* Pods-LocalDatabase-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,24 +310,6 @@
 			name = "Pods-GameRush";
 			productName = Pods_GameRush;
 			productReference = 653E35F358681BB7630E7DCF3EDA151C /* Pods-GameRush */;
-			productType = "com.apple.product-type.framework";
-		};
-		9C24D87A75E8EE26FF4CDD284890BAEE /* Pods-LocalDatabase */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 95D8FCF31CCCBFD73DF89091678A6B17 /* Build configuration list for PBXNativeTarget "Pods-LocalDatabase" */;
-			buildPhases = (
-				BDCC2D08D160832BDDE3726B161364AA /* Headers */,
-				AE5609DD4F7A171F0A3A141E52EA2DA5 /* Sources */,
-				776E3A10A142150527AFB19EE82D600E /* Frameworks */,
-				10AFD83C3B1B6ACCDF7026E974FD97E6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-LocalDatabase";
-			productName = Pods_LocalDatabase;
-			productReference = 7A7C87ADAB350B2F90C1A3A04F5E1F51 /* Pods-LocalDatabase */;
 			productType = "com.apple.product-type.framework";
 		};
 		D259C25D366B53C500B7537C7586C79F /* Pods-Favorite */ = {
@@ -466,7 +402,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = C24CD0D0582B65D985178C37549F99E7 /* Products */;
+			productRefGroup = 0D6DDA576FA0E4CC9F560C1973945D3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -474,20 +410,12 @@
 				D259C25D366B53C500B7537C7586C79F /* Pods-Favorite */,
 				0D6685AE5BA6A35E8DDB3E18A81CFA23 /* Pods-GameRush */,
 				D56AA8ED19F490F82F53CB449C03140F /* Pods-Games */,
-				9C24D87A75E8EE26FF4CDD284890BAEE /* Pods-LocalDatabase */,
 				FB349514EBE937233258F8858DF8AD35 /* Pods-Profile */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		10AFD83C3B1B6ACCDF7026E974FD97E6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1768CBDA1BA49C56DD0299B639DC6D50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -558,14 +486,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE5609DD4F7A171F0A3A141E52EA2DA5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE4FB6B68B22A636600D53863E6A1EE4 /* Pods-LocalDatabase-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F2089CA75CBF124CE8DCA5B439A53EB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -579,7 +499,7 @@
 /* Begin XCBuildConfiguration section */
 		0884D970683017B83BE4ACC6A9BBDA6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DBC08D7E85C04DB49FA76F49E04AA13 /* Pods-Favorite.release.xcconfig */;
+			baseConfigurationReference = 2BEBB19CFB8499E0C9E320E361B1937C /* Pods-Favorite.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -617,7 +537,7 @@
 		};
 		0CA66BFBB67413353180894109FCCFA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75145C7A2E8067DEF5CB6E2D843A1B81 /* Pods-GameRush.debug.xcconfig */;
+			baseConfigurationReference = A31C6A2944E501271A1C7343709D551C /* Pods-GameRush.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -716,7 +636,7 @@
 		};
 		600E6552935D295851946F4D6C8EEF74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 217494E16960A47646F01383162474B1 /* Pods-Favorite.debug.xcconfig */;
+			baseConfigurationReference = E62D7C6CD6FFBCE52422472E8DFD2C8A /* Pods-Favorite.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -753,7 +673,7 @@
 		};
 		603AEC334B813D5C402B067EA7282B05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC100BA911AB5505B2A8047F1D96F8BA /* Pods-Profile.release.xcconfig */;
+			baseConfigurationReference = 5A993A2BAFD181FF3B1922B56CAF387E /* Pods-Profile.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -791,7 +711,7 @@
 		};
 		7162243CDF74670A49F26F1ABB30D363 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C201FE99F16D428483A4B23F1F56BF0F /* Pods-Games.debug.xcconfig */;
+			baseConfigurationReference = FEB925600379E82634288F4FB0A1D667 /* Pods-Games.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -828,7 +748,7 @@
 		};
 		83789D3CAE47EF6B7EADA0EDF797A8BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BDFD11A860DC154D8F40FFC26A127AE /* Pods-Profile.debug.xcconfig */;
+			baseConfigurationReference = E0E539066298BB6C0501A0274E14206C /* Pods-Profile.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -865,7 +785,7 @@
 		};
 		A2D7FF8E2CDFAB96DB1DEBE1A1FFB73A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 388EBE9E1A483B32D4BB44AE28261807 /* Pods-Games.release.xcconfig */;
+			baseConfigurationReference = E6076AF23687514C5C599F1487D4D8F5 /* Pods-Games.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -901,47 +821,9 @@
 			};
 			name = Release;
 		};
-		B90E81E8E8DD0A171B29722739D532C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57918CADA8781CE77D920BA4A8A53AD3 /* Pods-LocalDatabase.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LocalDatabase/Pods-LocalDatabase-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LocalDatabase/Pods-LocalDatabase.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		C456D58FA4B72F3722BC54B90F03A937 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99E22F9EE9F72264D7508C91BED4C3E3 /* Pods-Common.release.xcconfig */;
+			baseConfigurationReference = E937AC00C2C6B3BF64073F2F39F7C6C9 /* Pods-Common.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -979,7 +861,7 @@
 		};
 		CE514548E6FC1CCAB8D4F2869A4D249B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFBEF3933F41DBB209491917B1D6D05D /* Pods-GameRush.release.xcconfig */;
+			baseConfigurationReference = CA52ABF018F3701D676DE4AD62920822 /* Pods-GameRush.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1017,7 +899,7 @@
 		};
 		E1CD6C2D8EE877EE40310DB5F667FA1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D722D3FDD5AA73A50302244216820AF2 /* Pods-Common.debug.xcconfig */;
+			baseConfigurationReference = E0645765AC92E290B126940DB12C81EB /* Pods-Common.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1039,43 +921,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Common/Pods-Common.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		ECFC20AA499B6266DDA119E95CC08DE6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A6E549D6E5F62677FC077B0ADA2F657 /* Pods-LocalDatabase.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LocalDatabase/Pods-LocalDatabase-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LocalDatabase/Pods-LocalDatabase.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1190,15 +1035,6 @@
 			buildConfigurations = (
 				F4FF6A0D1970CA9705974E3CB2134802 /* Debug */,
 				30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		95D8FCF31CCCBFD73DF89091678A6B17 /* Build configuration list for PBXNativeTarget "Pods-LocalDatabase" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ECFC20AA499B6266DDA119E95CC08DE6 /* Debug */,
-				B90E81E8E8DD0A171B29722739D532C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

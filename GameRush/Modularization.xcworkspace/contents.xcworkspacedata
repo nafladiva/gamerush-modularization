@@ -11,9 +11,6 @@
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../LocalDatabase/LocalDatabase.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../Games/Games.xcodeproj">
    </FileRef>
    <FileRef
