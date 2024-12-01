@@ -11,7 +11,7 @@ workflows:
       - name: Run tests
         script: |
           xcodebuild \
-          -workspace "$XCODE_PROJECT" \
+          -workspace "$XCODE_WORKSPACE" \
           -scheme "$XCODE_SCHEME" \
           -sdk iphonesimulator \
           -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=16.1' \
