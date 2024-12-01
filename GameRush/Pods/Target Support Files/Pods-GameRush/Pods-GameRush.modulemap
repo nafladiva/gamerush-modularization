@@ -1,0 +1,6 @@
+framework module Pods_GameRush {
+  umbrella header "Pods-GameRush-umbrella.h"
+
+  export *
+  module * { export * }
+}

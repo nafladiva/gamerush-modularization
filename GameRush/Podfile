@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '16.0'
+ 
+use_frameworks!
+workspace 'Modularization'
+ 
+target 'GameRush' do
+  # Pods for GameRush
+end
+ 
+target 'Common' do
+  project '../Common/Common'
+end
+
+target 'LocalDatabase' do
+  project '../LocalDatabase/LocalDatabase'
+end
+
+target 'Games' do
+  project '../Games/Games'
+end
+
+target 'Favorite' do
+  project '../Favorite/Favorite'
+end
