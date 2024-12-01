@@ -1,19 +1,20 @@
 //
 //  Injection.swift
-//  GameRush
+//  Games
 //
-//  Created by Nafla Diva Syafia on 23/11/24.
+//  Created by Nafla Diva Syafia on 01/12/24.
 //
 
+import LocalDatabase
 import Foundation
 
 final class Injection: NSObject {
     
     private func provideCoreData() -> CoreDataStack {
-        let coreDataStack = CoreDataStack(modelName: "GRCoreData")
+        let coreDataStack = CoreDataStack()
         coreDataStack.loadPersistentStores { error in
             if let error = error {
-                print("Failed to load persistent stores: \(error)")
+                print("[Games] Failed to load persistent stores: \(error)")
             } else {
                 print("Persistent stores loaded successfully")
             }
@@ -27,13 +28,13 @@ final class Injection: NSObject {
     }
  
     private func provideRepository() -> GameRepositoryProtocol {
-        let gameDataSource = provideDataSource()
-        return GameRepository(dataSource: gameDataSource)
+        let dataSource = provideDataSource()
+        return GameRepository(dataSource: dataSource)
     }
  
     func provideUseCase() -> GameUseCase {
-        let gameRepository = provideRepository()
-        return GameInteractor(repository: gameRepository)
+        let repository = provideRepository()
+        return GameInteractor(repository: repository)
     }
  
 }

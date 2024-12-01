@@ -15,8 +15,12 @@ public class CoreDataStack {
         return persistentContainer.viewContext
     }
     
-    public init(modelName: String) {
-        self.persistentContainer = NSPersistentContainer(name: modelName)
+    public init() {
+        let bundle = Bundle(for: CoreDataStack.self)
+        let model = bundle
+            .url(forResource: "GRCoreData", withExtension: "momd")
+            .flatMap { NSManagedObjectModel(contentsOf: $0) }!
+        self.persistentContainer = NSPersistentContainer(name: "GRCoreData", managedObjectModel: model)
     }
     
     public func loadPersistentStores(completion: @escaping (Error?) -> Void) {

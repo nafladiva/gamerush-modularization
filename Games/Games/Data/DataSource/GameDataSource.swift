@@ -9,6 +9,7 @@ import Foundation
 import Combine
 import Common
 import CoreData
+import LocalDatabase
 
 class GameDataSource: GameDataSourceProtocol {
     
@@ -19,7 +20,7 @@ class GameDataSource: GameDataSourceProtocol {
         self.coreDataStack = coreDataStack
     }
 
-    func getGamesV2() -> AnyPublisher<GamesResponses, Error> {
+    func getGames() -> AnyPublisher<GamesResponses, Error> {
         var components = URLComponents(string: "https://api.rawg.io/api/games")!
         components.queryItems = [
             URLQueryItem(name: "key", value: GRSecret.apiKey)
@@ -37,7 +38,7 @@ class GameDataSource: GameDataSourceProtocol {
                 .eraseToAnyPublisher()
     }
     
-    func getGameDetailV2(gameId: Int) -> AnyPublisher<GameDetailResponse, Error> {
+    func getGameDetail(gameId: Int) -> AnyPublisher<GameDetailResponse, Error> {
         var components = URLComponents(string: "https://api.rawg.io/api/games/\(gameId)")!
         components.queryItems = [
             URLQueryItem(name: "key", value: GRSecret.apiKey)
@@ -54,36 +55,7 @@ class GameDataSource: GameDataSourceProtocol {
                 .decode(type: GameDetailResponse.self, decoder: JSONDecoder())
                 .eraseToAnyPublisher()
     }
-    
-    func getFavorites() -> AnyPublisher<[FavoriteEntity], Error> {
-        let taskContext = coreDataStack.newTaskContext()
-        
-        return Future { promise in
-            taskContext.perform {
-                let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorite")
-                do {
-                    let result = try taskContext.fetch(fetchRequest)
-                    var favorites: [FavoriteEntity] = []
-                    for res in result {
-                        let favorite = FavoriteEntity(
-                            id: res.value(forKeyPath: "id") as? Int16,
-                            name: res.value(forKeyPath: "name") as? String,
-                            image: res.value(forKeyPath: "image") as? Data,
-                            genres: res.value(forKeyPath: "genres") as? String,
-                            released: res.value(forKeyPath: "released") as? String,
-                            rating: res.value(forKeyPath: "rating") as? Double
-                        )
-                        favorites.append(favorite)
-                    }
-                    promise(.success(favorites))
-                } catch let error as NSError {
-                    promise(.failure(error))
-                }
-            }
-        }
-        .eraseToAnyPublisher()
-    }
-    
+
     func checkFavoriteStatus(gameId: Int) -> AnyPublisher<Bool, any Error> {
         let taskContext = coreDataStack.newTaskContext()
         

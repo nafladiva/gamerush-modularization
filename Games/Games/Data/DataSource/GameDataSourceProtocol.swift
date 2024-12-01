@@ -1,5 +1,5 @@
 //
-//  GameRepositoryProtocol.swift
+//  GameDataSourceProtocol.swift
 //  GameRush
 //
 //  Created by Nafla Diva Syafia on 23/11/24.
@@ -8,10 +8,9 @@
 import Combine
 import Foundation
 
-protocol GameRepositoryProtocol {
-    func getGamesV2() -> AnyPublisher<[GameEntity], Error>
-    func getGameDetailV2(gameId: Int) -> AnyPublisher<GameDetailEntity, Error>
-    func getFavorites() -> AnyPublisher<[FavoriteEntity], Error>
+protocol GameDataSourceProtocol {
+    func getGames() -> AnyPublisher<GamesResponses, Error>
+    func getGameDetail(gameId: Int) -> AnyPublisher<GameDetailResponse, Error>
     func checkFavoriteStatus(gameId: Int) -> AnyPublisher<Bool, Error>
     func addFavorite(
         _ id: Int,

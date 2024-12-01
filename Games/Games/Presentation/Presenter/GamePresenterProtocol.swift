@@ -1,5 +1,5 @@
 //
-//  GameUseCase.swift
+//  GamePresenterProtocol.swift
 //  GameRush
 //
 //  Created by Nafla Diva Syafia on 23/11/24.
@@ -8,10 +8,9 @@
 import Combine
 import Foundation
 
-protocol GameUseCase {
-    func getGamesV2() -> AnyPublisher<[GameEntity], Error>
-    func getGameDetailV2(gameId: Int) -> AnyPublisher<GameDetailEntity, Error>
-    func getFavorites() -> AnyPublisher<[FavoriteEntity], Error>
+protocol GamePresenterProtocol {
+    func getGames() -> AnyPublisher<[GameEntity], Error>
+    func getGameDetail(gameId: Int) -> AnyPublisher<GameDetailEntity, Error>
     func checkFavoriteStatus(gameId: Int) -> AnyPublisher<Bool, Error>
     func addFavorite(
         _ id: Int,

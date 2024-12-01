@@ -16,18 +16,14 @@ class GamePresenter: GamePresenterProtocol {
         self.gameUseCase = useCase
     }
     
-    func getGamesV2() -> AnyPublisher<[GameEntity], Error> {
-        return gameUseCase.getGamesV2()
+    func getGames() -> AnyPublisher<[GameEntity], Error> {
+        return gameUseCase.getGames()
     }
     
-    func getGameDetailV2(gameId: Int) -> AnyPublisher<GameDetailEntity, Error> {
-        return gameUseCase.getGameDetailV2(gameId: gameId)
+    func getGameDetail(gameId: Int) -> AnyPublisher<GameDetailEntity, Error> {
+        return gameUseCase.getGameDetail(gameId: gameId)
     }
     
-    func getFavorites() -> AnyPublisher<[FavoriteEntity], any Error> {
-        return gameUseCase.getFavorites()
-    }
-
     func checkFavoriteStatus(gameId: Int) -> AnyPublisher<Bool, any Error> {
         return gameUseCase.checkFavoriteStatus(gameId: gameId)
     }

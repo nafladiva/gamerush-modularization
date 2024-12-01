@@ -16,16 +16,12 @@ class GameInteractor: GameUseCase {
         self.repository = repository
     }
     
-    func getGamesV2() -> AnyPublisher<[GameEntity], any Error> {
-        return repository.getGamesV2()
+    func getGames() -> AnyPublisher<[GameEntity], any Error> {
+        return repository.getGames()
     }
     
-    func getGameDetailV2(gameId: Int) -> AnyPublisher<GameDetailEntity, any Error> {
-        return repository.getGameDetailV2(gameId: gameId)
-    }
-    
-    func getFavorites() -> AnyPublisher<[FavoriteEntity], any Error> {
-        return repository.getFavorites()
+    func getGameDetail(gameId: Int) -> AnyPublisher<GameDetailEntity, any Error> {
+        return repository.getGameDetail(gameId: gameId)
     }
     
     func checkFavoriteStatus(gameId: Int) -> AnyPublisher<Bool, any Error> {

@@ -7,6 +7,7 @@
 
 import Common
 import Favorite
+import Games
 import Profile
 import UIKit
 
@@ -24,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
         
         let tabBar = UITabBarController()
-        let gameListViewController = UINavigationController(rootViewController: ViewController())
+        let gameListViewController = UINavigationController(rootViewController: MainViewController())
         let favoriteListViewController = UINavigationController(rootViewController: FavoriteViewController())
         let profileViewController = UINavigationController(rootViewController: ProfileViewController())
         

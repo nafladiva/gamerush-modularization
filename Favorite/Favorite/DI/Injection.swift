@@ -11,10 +11,10 @@ import Foundation
 final class Injection: NSObject {
     
     private func provideCoreData() -> CoreDataStack {
-        let coreDataStack = CoreDataStack(modelName: "GRCoreData")
+        let coreDataStack = CoreDataStack()
         coreDataStack.loadPersistentStores { error in
             if let error = error {
-                print("Failed to load persistent stores: \(error)")
+                print("[Favorite] Failed to load persistent stores: \(error)")
             } else {
                 print("Persistent stores loaded successfully")
             }

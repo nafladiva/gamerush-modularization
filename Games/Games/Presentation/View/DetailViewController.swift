@@ -9,7 +9,7 @@ import Combine
 import Common
 import UIKit
 
-class DetailViewController: UIViewController {
+public class DetailViewController: UIViewController {
     
     var gameId: Int?
     var gameDetail: GameDetailEntity? = nil
@@ -33,7 +33,7 @@ class DetailViewController: UIViewController {
     let publisherLabel = UILabel()
     var favoriteButtonBar = UIBarButtonItem()
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .backgroundColor
         
@@ -41,13 +41,13 @@ class DetailViewController: UIViewController {
         buildUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        getGameDetailV2()
+        getGameDetail()
         getFavoriteStatus()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         scrollView.contentSize = view.frame.size
     }
@@ -69,12 +69,12 @@ class DetailViewController: UIViewController {
             .store(in: &self.cancellables)
     }
     
-    func getGameDetailV2() {
+    func getGameDetail() {
         let usecase = Injection.init().provideUseCase()
         let presenter = GamePresenter(useCase: usecase)
         
         showLoading()
-        presenter.getGameDetailV2(gameId: gameId ?? 0)
+        presenter.getGameDetail(gameId: gameId ?? 0)
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
                 if case let .failure(error) = completion {
@@ -438,7 +438,7 @@ class DetailViewController: UIViewController {
             preferredStyle: .alert
         )
         alert.addAction(UIAlertAction(title: "Retry", style: .default, handler: { action in
-            self.getGameDetailV2()
+            self.getGameDetail()
             self.getFavoriteStatus()
         }))
         present(alert, animated: true, completion: nil)

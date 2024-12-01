@@ -9,14 +9,14 @@ import Combine
 import Common
 import UIKit
 
-class ViewController: UIViewController {
+public class MainViewController: UIViewController {
     
     let tableView = UITableView()
     
     private var cancellables = Set<AnyCancellable>()
     private var games: [GameEntity] = []
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .backgroundColor
         
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         tableView.register(GameTableViewCell.self, forCellReuseIdentifier: "gameCell")
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if games.isEmpty {
             getGames()
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         let presenter = GamePresenter(useCase: usecase)
         
         tableView.showLoading()
-        presenter.getGamesV2()
+        presenter.getGames()
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
                 if case let .failure(error) = completion {
@@ -94,12 +94,12 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension MainViewController: UITableViewDataSource {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return games.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let game = games[indexPath.row]
         guard let tableCell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath) as? GameTableViewCell else {
             return UITableViewCell()
@@ -129,8 +129,8 @@ extension ViewController: UITableViewDataSource {
 
 }
 
-extension ViewController: UITableViewDelegate {
-    func tableView(
+extension MainViewController: UITableViewDelegate {
+    public func tableView(
       _ tableView: UITableView,
       didSelectRowAt indexPath: IndexPath
     ) {

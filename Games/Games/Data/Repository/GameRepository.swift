@@ -18,24 +18,19 @@ class GameRepository: GameRepositoryProtocol {
         self.gameDataSource = dataSource
     }
     
-    func getGamesV2() -> AnyPublisher<[GameEntity], any Error> {
-        return gameDataSource.getGamesV2()
+    func getGames() -> AnyPublisher<[GameEntity], any Error> {
+        return gameDataSource.getGames()
             .tryMap { items in
                 try self.listMapper(input: items)
             }
             .eraseToAnyPublisher()
     }
     
-    func getGameDetailV2(gameId: Int) -> AnyPublisher<GameDetailEntity, any Error> {
-        return gameDataSource.getGameDetailV2(gameId: gameId)
+    func getGameDetail(gameId: Int) -> AnyPublisher<GameDetailEntity, any Error> {
+        return gameDataSource.getGameDetail(gameId: gameId)
             .tryMap { items in
                 try self.detailMapper(input: items)
             }
-            .eraseToAnyPublisher()
-    }
-    
-    func getFavorites() -> AnyPublisher<[FavoriteEntity], any Error> {
-        return gameDataSource.getFavorites()
             .eraseToAnyPublisher()
     }
     

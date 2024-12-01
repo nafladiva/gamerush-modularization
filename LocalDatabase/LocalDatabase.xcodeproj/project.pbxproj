@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30084B092CFC23EB005AD67A /* GRCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30084B062CFC23EB005AD67A /* GRCoreData.xcdatamodeld */; };
 		30084B0A2CFC23EB005AD67A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30084B082CFC23EB005AD67A /* CoreDataStack.swift */; };
+		303AD3E82CFC3E1400867DC8 /* GRCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 303AD3E62CFC3E1400867DC8 /* GRCoreData.xcdatamodeld */; };
 		3076A79A2CFC238E006CDA6A /* LocalDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3076A7992CFC238E006CDA6A /* LocalDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2D3EAE9038BCBCC9C8C456 /* Pods_LocalDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378A5D423B50D52B8A06617F /* Pods_LocalDatabase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		30084B072CFC23EB005AD67A /* GRCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GRCoreData.xcdatamodel; sourceTree = "<group>"; };
 		30084B082CFC23EB005AD67A /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		303AD3E72CFC3E1400867DC8 /* GRCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GRCoreData.xcdatamodel; sourceTree = "<group>"; };
 		3076A7962CFC238E006CDA6A /* LocalDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3076A7992CFC238E006CDA6A /* LocalDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDatabase.h; sourceTree = "<group>"; };
 		378A5D423B50D52B8A06617F /* Pods_LocalDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,8 +56,8 @@
 		3076A7982CFC238E006CDA6A /* LocalDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				303AD3E62CFC3E1400867DC8 /* GRCoreData.xcdatamodeld */,
 				30084B082CFC23EB005AD67A /* CoreDataStack.swift */,
-				30084B062CFC23EB005AD67A /* GRCoreData.xcdatamodeld */,
 				3076A7992CFC238E006CDA6A /* LocalDatabase.h */,
 			);
 			path = LocalDatabase;
@@ -187,8 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30084B092CFC23EB005AD67A /* GRCoreData.xcdatamodeld in Sources */,
 				30084B0A2CFC23EB005AD67A /* CoreDataStack.swift in Sources */,
+				303AD3E82CFC3E1400867DC8 /* GRCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,12 +415,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		30084B062CFC23EB005AD67A /* GRCoreData.xcdatamodeld */ = {
+		303AD3E62CFC3E1400867DC8 /* GRCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				30084B072CFC23EB005AD67A /* GRCoreData.xcdatamodel */,
+				303AD3E72CFC3E1400867DC8 /* GRCoreData.xcdatamodel */,
 			);
-			currentVersion = 30084B072CFC23EB005AD67A /* GRCoreData.xcdatamodel */;
+			currentVersion = 303AD3E72CFC3E1400867DC8 /* GRCoreData.xcdatamodel */;
 			name = GRCoreData.xcdatamodeld;
 			path = "/Users/nafladiva/Documents/Swift/gamerush-modularization/LocalDatabase/LocalDatabase/GRCoreData.xcdatamodeld";
 			sourceTree = "<group>";
